@@ -20,29 +20,50 @@
             color: var(--text-color);
         }
 
+        /* --- PENGATURAN HEADER & LOGO BARU --- */
         header {
             background-color: var(--primary-color);
             color: white;
-            padding: 3rem 1rem;
-            text-align: center;
+            padding: 2rem 1rem;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
 
-        header h1 {
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .header-logo {
+            width: 80px; /* Ukuran logo, bisa diperbesar/diperkecil */
+            height: auto;
+            object-fit: contain;
+        }
+
+        .header-text {
+            text-align: center;
+            flex-grow: 1;
+            padding: 0 1rem;
+        }
+
+        .header-text h1 {
             margin: 0;
             font-size: 1.8rem;
             text-transform: uppercase;
         }
 
-        header p {
+        .header-text p {
             margin: 10px 0 0 0;
             font-size: 1.1rem;
             opacity: 0.9;
         }
+        /* ------------------------------------ */
 
         .container {
             max-width: 1000px;
-            margin: -2rem auto 2rem auto;
+            margin: 2rem auto 2rem auto;
             padding: 0 1rem;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -91,9 +112,14 @@
             font-size: 0.9rem;
         }
 
-        /* Responsif untuk layar kecil */
+        /* Responsif untuk layar HP */
         @media (max-width: 600px) {
-            header h1 { font-size: 1.5rem; }
+            .header-content {
+                flex-direction: column; /* Mengubah susunan logo dan teks menjadi atas-bawah */
+                gap: 1rem;
+            }
+            .header-text h1 { font-size: 1.4rem; }
+            .header-logo { width: 60px; } /* Memperkecil logo di HP */
             .container { margin-top: 1rem; }
         }
     </style>
@@ -101,8 +127,16 @@
 <body>
 
     <header>
-        <h1>Pendampingan Mutu Pelayanan Internal Puskesmas</h1>
-        <p>Dinas Kesehatan Kabupaten Majene - TA 2026</p>
+        <div class="header-content">
+            <img src="logo-puskesmas.png" alt="Logo Puskesmas" class="header-logo">
+            
+            <div class="header-text">
+                <h1>Pendampingan Mutu Pelayanan Internal Puskesmas</h1>
+                <p>Dinas Kesehatan Kabupaten Majene - TA 2026</p>
+            </div>
+
+            <img src="logo-majene.png" alt="Logo Pemkab Majene" class="header-logo">
+        </div>
     </header>
 
     <div class="container">
