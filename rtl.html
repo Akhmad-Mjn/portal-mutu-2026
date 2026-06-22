@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir RTL - Dinkes Kab. Majene</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #059669; /* Hijau Kesehatan */
+            --hover-color: #047857;
+            --bg-color: #f3f4f6;
+            --text-color: #1f2937;
+            --excel-color: #107c41; /* Hijau Khas Excel */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+        }
+
+        header p {
+            margin: 10px 0 0 0;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .section-card {
+            background: white;
+            padding: 2.5rem 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .section-card i {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .download-card i { color: var(--excel-color); }
+        .upload-card i { color: var(--primary-color); }
+
+        .section-card h3 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.3rem;
+        }
+
+        .section-card p {
+            margin: 0 0 1.5rem 0;
+            font-size: 0.95rem;
+            color: #4b5563;
+        }
+
+        /* Tombol Aksi */
+        .btn-action {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: bold;
+            width: 80%;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-download { background-color: var(--excel-color); }
+        .btn-download:hover { background-color: #0b5930; }
+
+        .btn-upload { background-color: var(--primary-color); }
+        .btn-upload:hover { background-color: var(--hover-color); }
+
+        .btn-action i { margin-right: 0.5rem; }
+
+        .btn-back {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #6b7280;
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-back:hover { background-color: #4b5563; }
+        .btn-back i { margin-right: 0.5rem; }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .container { margin-top: 1rem; }
+            header h1 { font-size: 1.3rem; }
+            .btn-action { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Rencana Tindak Lanjut (RTL) Mutu</h1>
+        <p>Pendampingan Mutu Pelayanan Internal Puskesmas TA 2026</p>
+    </header>
+
+    <div class="container">
+        <div class="grid-layout">
+            
+            <div class="section-card download-card">
+                <div>
+                    <i class="fas fa-file-excel"></i>
+                    <h3>1. Unduh Formulir RTL</h3>
+                    <p>Silakan unduh template instrumen RTL format Excel di bawah ini untuk diisi secara berkelompok oleh Tim Mutu Puskesmas.</p>
+                </div>
+                <a href="Formulir_RTL_Mutu_Puskesmas_Majene_2026.xlsx" class="btn-action btn-download" download>
+                    <i class="fas fa-download"></i> Unduh Template
+                </a>
+            </div>
+
+            <div class="section-card upload-card">
+                <div>
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <h3>2. Unggah Dokumen Selesai</h3>
+                    <p>Jika formulir RTL sudah diisi lengkap dan ditandatangani oleh Kepala Puskesmas, silakan unggah kembali file tersebut di sini.</p>
+                </div>
+                <a href="MASUKKAN_LINK_GOOGLE_FORM_UPLOAD_DI_SINI" class="btn-action btn-upload" target="_blank">
+                    <i class="fas fa-upload"></i> Unggah File (.xlsx)
+                </a>
+            </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="index.html" class="btn-back">
+                <i class="fas fa-arrow-left"></i> Kembali ke Beranda
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Dinas Kesehatan Kabupaten Majene. Seluruh Hak Cipta Dilindungi.
+    </footer>
+
+</body>
+</html>
