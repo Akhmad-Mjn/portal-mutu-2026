@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Kegiatan - Dinas Kesehatan Kab. Majene</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #059669; /* Hijau Kesehatan */
+            --hover-color: #047857;
+            --bg-color: #f3f4f6;
+            --text-color: #1f2937;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            color: var(--text-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+        }
+
+        header p {
+            margin: 10px 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: -2rem auto 2rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-color);
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--primary-color);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+            border-top: 4px solid var(--hover-color);
+        }
+
+        .card i {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .card h3 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.3rem;
+        }
+
+        .card p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        /* Responsif untuk layar kecil */
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.5rem; }
+            .container { margin-top: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Pendampingan Mutu Pelayanan Internal Puskesmas</h1>
+        <p>Dinas Kesehatan Kabupaten Majene - TA 2026</p>
+    </header>
+
+    <div class="container">
+        <a href="MASUKKAN_LINK_ZOOM_DI_SINI" class="card" target="_blank">
+            <i class="fas fa-video"></i>
+            <h3>Ruang Virtual (Zoom)</h3>
+            <p>Akses ruang pertemuan daring untuk Hari 1 & Hari 2</p>
+        </a>
+
+        <a href="MASUKKAN_LINK_GOOGLE_DRIVE_MATERI_DI_SINI" class="card" target="_blank">
+            <i class="fas fa-folder-open"></i>
+            <h3>Unduh Materi</h3>
+            <p>Modul, bahan tayang narasumber, dan panduan kegiatan</p>
+        </a>
+
+        <a href="MASUKKAN_LINK_ABSENSI_DI_SINI" class="card" target="_blank">
+            <i class="fas fa-clipboard-user"></i>
+            <h3>Daftar Hadir</h3>
+            <p>Formulir presensi harian untuk peserta dan panitia</p>
+        </a>
+
+        <a href="MASUKKAN_LINK_RTL_DI_SINI" class="card" target="_blank">
+            <i class="fas fa-file-signature"></i>
+            <h3>Formulir RTL</h3>
+            <p>Pengumpulan Rencana Tindak Lanjut per Puskesmas</p>
+        </a>
+
+        <a href="MASUKKAN_LINK_QUIZ_DI_SINI" class="card" target="_blank">
+            <i class="fas fa-spell-check"></i>
+            <h3>Pre-Test & Post-Test</h3>
+            <p>Evaluasi pemahaman materi peserta pendampingan</p>
+        </a>
+
+        <a href="MASUKKAN_LINK_SERTIFIKAT_DI_SINI" class="card" target="_blank">
+            <i class="fas fa-certificate"></i>
+            <h3>E-Sertifikat</h3>
+            <p>Unduh sertifikat kegiatan (Akses dibuka setelah acara)</p>
+        </a>
+    </div>
+
+    <footer>
+        &copy; 2026 Dinas Kesehatan Kabupaten Majene. Seluruh Hak Cipta Dilindungi.
+    </footer>
+
+</body>
+</html>
