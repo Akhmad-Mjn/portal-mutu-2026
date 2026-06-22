@@ -20,7 +20,6 @@
             color: var(--text-color);
         }
 
-        /* --- PENGATURAN HEADER & LOGO BARU --- */
         header {
             background-color: var(--primary-color);
             color: white;
@@ -37,7 +36,7 @@
         }
 
         .header-logo {
-            width: 80px; /* Ukuran logo, bisa diperbesar/diperkecil */
+            width: 80px;
             height: auto;
             object-fit: contain;
         }
@@ -59,7 +58,6 @@
             font-size: 1.1rem;
             opacity: 0.9;
         }
-        /* ------------------------------------ */
 
         .container {
             max-width: 1000px;
@@ -112,14 +110,13 @@
             font-size: 0.9rem;
         }
 
-        /* Responsif untuk layar HP */
         @media (max-width: 600px) {
             .header-content {
-                flex-direction: column; /* Mengubah susunan logo dan teks menjadi atas-bawah */
+                flex-direction: column;
                 gap: 1rem;
             }
             .header-text h1 { font-size: 1.4rem; }
-            .header-logo { width: 60px; } /* Memperkecil logo di HP */
+            .header-logo { width: 60px; }
             .container { margin-top: 1rem; }
         }
     </style>
@@ -128,14 +125,12 @@
 
     <header>
         <div class="header-content">
-            <img src="logo-majene.png" alt="Logo Pemkab Majene" class="header-logo">
-                        
+            <img src="logo-puskesmas.png" alt="Logo Puskesmas" class="header-logo">
             <div class="header-text">
                 <h1>Pendampingan Mutu Pelayanan Internal Puskesmas</h1>
                 <p>Dinas Kesehatan Kabupaten Majene - TA 2026</p>
             </div>
-
-            <img src="logo-puskesmas.png" alt="Logo Puskesmas" class="header-logo">
+            <img src="logo-majene.png" alt="Logo Pemkab Majene" class="header-logo">
         </div>
     </header>
 
@@ -164,10 +159,10 @@
             <p>Pengumpulan Rencana Tindak Lanjut per Puskesmas</p>
         </a>
 
-        <a href="MASUKKAN_LINK_QUIZ_DI_SINI" class="card" target="_blank">
-            <i class="fas fa-spell-check"></i>
-            <h3>Pre-Test & Post-Test</h3>
-            <p>Evaluasi pemahaman materi peserta pendampingan</p>
+        <a href="MASUKKAN_LINK_TATA_TERTIB_DI_SINI" class="card" target="_blank">
+            <i class="fas fa-clipboard-list"></i>
+            <h3>Tata Tertib</h3>
+            <p>Panduan dan peraturan selama mengikuti kegiatan daring</p>
         </a>
 
         <a href="MASUKKAN_LINK_SERTIFIKAT_DI_SINI" class="card" target="_blank">
